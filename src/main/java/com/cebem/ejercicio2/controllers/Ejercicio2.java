@@ -46,7 +46,7 @@ public String getNumberOfCharacters(@PathVariable String word) {
     return "La palabra introducida tiene "+cVocales+" vocales y "+cConsonantes+" consonantes.";
 }
 
-@GetMapping(value = "/guarda")
+@GetMapping("/guarda")
 public String addData(@RequestParam String name, @RequestParam String surname, @RequestParam String age) {
     Data data = new Data();
     data.setName(name);
