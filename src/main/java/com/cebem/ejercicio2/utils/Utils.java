@@ -5,7 +5,6 @@ public class Utils {
 
     public static String toUpper(String word){
         return word.toUpperCase();
-
     }
     
 }
