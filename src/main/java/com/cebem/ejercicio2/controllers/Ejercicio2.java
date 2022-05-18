@@ -26,6 +26,11 @@ public class Ejercicio2 {
     @Autowired
     TranslationService translationService;    
 
+@GetMapping("/") 
+public String greet(){
+    return "Bienvenido al servidor";
+}
+
 @GetMapping("/contar/{word}")
 public String getNumberOfCharacters(@PathVariable String word) {
     int cVocales=0;
